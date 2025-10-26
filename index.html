@@ -858,11 +858,39 @@
             </div>
         </section>
 
-        <section id="contact" class="section-padding">
-            <div class="section-content-wrapper">
-                <h2>سؤالات متداول و تماس با ما</h2>
-                </div>
-        </section>
+		<section id="contact" class="section-padding">
+			<div class="container section-content-wrapper">
+				<h2>سؤالات متداول و تماس با ما</h2>
+				
+				<div class="row">
+					<div class="col-lg-8 offset-lg-2">
+						<form action="https://formsubmit.co/YOUR_EMAIL_ADDRESS@EXAMPLE.COM" method="POST" class="new-contact-form">
+							
+							<div class="mb-3">
+								<label for="new-name" class="form-label visually-hidden">نام</label>
+								<input type="text" name="نام" id="new-name" class="form-control" placeholder="نام شما (اختیاری)">
+							</div>
+
+							<div class="mb-3">
+								<label for="new-email" class="form-label visually-hidden">ایمیل</label>
+								<input type="email" name="ایمیل" id="new-email" class="form-control" placeholder="ایمیل شما (برای پاسخ‌دهی)" required>
+							</div>
+
+							<div class="mb-3">
+								<label for="new-message" class="form-label visually-hidden">پیام</label>
+								<textarea name="پیام" id="new-message" class="form-control" rows="5" placeholder="پیام، سوال یا نظر خود را بنویسید..." required></textarea>
+							</div>
+
+							<button type="submit" class="btn btn-primary">ارسال پیام</button>
+
+							<input type="hidden" name="_next" value="https://fehrestbaha.github.io/"> 
+							<input type="hidden" name="_subject" value="پیام جدید از طریق سایت فهرست بها"> 
+						</form>
+					</div>
+				</div>
+				
+			</div>
+		</section>
 
     </main>
 
