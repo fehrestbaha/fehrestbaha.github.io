@@ -1,0 +1,176 @@
+/* متغیرهای CSS (برای مدیریت سریع رنگ و فونت) */
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --background-color: #f0f2f5; 
+    --font-family: 'Vazirmatn', Tahoma, sans-serif; 
+    --padding-section: 80px; 
+    --max-width-desktop: 1200px; 
+    --side-padding: 30px; 
+    /* متغیرهای پایه برای اندازه فونت‌ها */
+    --base-h1-size: 2.5em; 
+    --base-h2-size: 1.8em; 
+}
+
+/* ---------------------------------------------------- */
+/* تنظیمات فونت */
+/* ---------------------------------------------------- */
+@font-face {
+    font-family: 'Vazirmatn';
+    src: url('../fonts/Vazirmatn-Regular.woff2') format('woff2'); 
+    font-weight: 400; 
+    font-style: normal;
+    font-display: swap; 
+}
+@font-face {
+    font-family: 'Vazirmatn';
+    src: url('../fonts/Vazirmatn-Bold.woff2') format('woff2'); 
+    font-weight: 700; 
+    font-display: swap; 
+}
+
+    body {
+      font-family: "Vazirmatn", sans-serif;
+      margin: 0;
+      background-color: #f8fafc;
+      color: #222;
+      line-height: 1.8;
+    }
+
+    header {
+      background: linear-gradient(135deg, #004a99, #007acc);
+      color: #fff;
+      text-align: center;
+      padding: 70px 20px;
+    }
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+
+    main {
+      max-width: 950px;
+      margin: 40px auto;
+      padding: 0 20px;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    }
+
+    section {
+      padding: 30px 25px;
+      border-bottom: 1px solid #eee;
+    }
+    section:last-child {
+      border-bottom: none;
+    }
+
+    h2 {
+      color: #004080;
+      margin-bottom: 15px;
+    }
+    h3 {
+      color: #007acc;
+      margin-top: 25px;
+    }
+
+    ul {
+      padding-right: 20px;
+    }
+
+    .cta {
+      text-align: center;
+      margin: 40px 0;
+    }
+    .cta a {
+      background-color: #007acc;
+      color: #fff;
+      padding: 14px 40px;
+      border-radius: 50px;
+      font-size: 1.1rem;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .cta a:hover {
+      background-color: #005fa3;
+    }
+
+    .contact-form {
+      background: #f1f6ff;
+      padding: 30px 25px;
+      border-radius: 12px;
+      text-align: center;
+      margin: 40px 0;
+    }
+
+    .contact-form h2 {
+      margin-bottom: 10px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    input, textarea {
+      padding: 12px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+      font-family: inherit;
+      resize: none;
+    }
+
+    button {
+      background-color: #007acc;
+      color: #fff;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: 0.3s;
+    }
+    button:hover {
+      background-color: #005fa3;
+    }
+
+    .whatsapp {
+      display: inline-block;
+      margin-top: 15px;
+      background-color: #25d366;
+      color: white;
+      padding: 10px 25px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: 0.3s;
+    }
+    .whatsapp:hover {
+      background-color: #1ebc59;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #e9f3ff;
+      color: #333;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.5rem;
+      }
+      .cta a, .whatsapp {
+        font-size: 0.95rem;
+        padding: 10px 20px;
+      }
+    }
