@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://fehrestbaha.github.io/sitemap.xml
+
+Sitemap: https://fehrestbaha.github.io/sitemap.xml.gz
